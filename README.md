@@ -8,7 +8,7 @@
 
 支持 4 种模式: 安静 (Quiet)、省电 (Power Saving)、性能 (Performance)、娱乐 (Entertainment)。
 
-不同发行版/内核需要自己编译，所以不提供 Release
+不同发行版/内核需要自己编译
 
 ## 安装
 
