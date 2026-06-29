@@ -118,6 +118,7 @@ sudo systemctl enable --now nvidia-powerd
 | `perf_mode.c` | 主程序源码 |
 | `Makefile` | 编译 (`make` / `make clean` / `make install`) |
 | `install.sh` | 一键安装脚本 (tuxedo-drivers + perf_mode) |
+| `install_arch.sh` | Arch Linux的一键安装脚本 (tuxedo-drivers-dkms + perf_mode) |
 | `uninstall.sh` | 一键卸载脚本 |
 | `LICENSE` | GPL-3.0 许可证 |
 
