@@ -92,6 +92,7 @@ sudo make install
 ```
 
 Arch Linux 安装脚本自带 DKMS 自动处理
+
 推荐使用 DKMS 自动处理内核升级 (参考 [tuxedo-drivers](https://github.com/tuxedocomputers/tuxedo-drivers) DKMS 安装文档)。
 
 ### 开启 NVIDIA 动态功耗守护进程
