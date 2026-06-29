@@ -32,7 +32,7 @@ sudo ./install.sh /tmp/tuxedo-drivers
 - 立即加载所有模块
 - 编译并安装 `perf_mode` 到 `/usr/local/bin/`
 
-### Arch Linux 一键安装脚本
+### Arch Linux 一键安装
 
 ```
 # Arch Linux 可以使用 AUR 上的 tuxedo-drivers-dkms 动态内核或自行编译 dkms 内核
@@ -97,6 +97,7 @@ Arch Linux 安装脚本自带 DKMS 自动处理
 ### 开启 NVIDIA 动态功耗守护进程
 
 Arch Linux 需要开启此项才能解锁 140W 功耗墙
+
 其他发行版自行测试
 
 ```
