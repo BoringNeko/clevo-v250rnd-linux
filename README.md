@@ -10,7 +10,7 @@
 
 不同发行版/内核需要自己编译
 
-Archlinux 当前无法使用，等待修复
+已解决 Arch Linux 无法使用的问题
 
 ## 安装
 
@@ -32,7 +32,27 @@ sudo ./install.sh /tmp/tuxedo-drivers
 - 立即加载所有模块
 - 编译并安装 `perf_mode` 到 `/usr/local/bin/`
 
+#### 提供 Arch Linux 一键安装脚本
+
+```
+# Arch Linux 可以使用 AUR 上的 tuxedo-drivers-dkms 动态内核或自行编译 dkms 内核
+yay -S tuxedo-drivers-dkms
+
+cd /path/to/Mode
+chmod +x install-arch.sh
+./install_arch.sh
+```
+
 ### 手动安装
+
+```
+# 编译 tuxedo-drivers (内核模块)
+git clone https://github.com/tuxedocomputers/tuxedo-drivers.git /tmp/tuxedo-drivers
+cd /tmp/tuxedo-drivers && make -j$(nproc)
+
+# Arch Linux 可以使用 AUR 上的 tuxedo-drivers-dkms 动态内核或自行编译 dkms 内核
+yay -S tuxedo-drivers-dkms
+```
 
 ```bash
 # 编译
@@ -71,7 +91,17 @@ make clean && make
 sudo make install
 ```
 
+Arch Linux 安装脚本自带 DKMS 自动处理
 推荐使用 DKMS 自动处理内核升级 (参考 [tuxedo-drivers](https://github.com/tuxedocomputers/tuxedo-drivers) DKMS 安装文档)。
+
+### 开启 NVIDIA 动态功耗守护进程
+
+Arch Linux 需要开启此项才能解锁 140W 功耗墙
+其他发行版自行测试
+
+```
+sudo systemctl enable --now nvidia-powerd
+```
 
 ## 依赖
 
