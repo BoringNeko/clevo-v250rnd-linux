@@ -32,7 +32,7 @@ sudo ./install.sh /tmp/tuxedo-drivers
 - 立即加载所有模块
 - 编译并安装 `perf_mode` 到 `/usr/local/bin/`
 
-#### 提供 Arch Linux 一键安装脚本
+### Arch Linux 一键安装脚本
 
 ```
 # Arch Linux 可以使用 AUR 上的 tuxedo-drivers-dkms 动态内核或自行编译 dkms 内核
