@@ -4,7 +4,7 @@
 
 因为七彩虹/蓝天公模笔记本没有 Linux 下的控制中心，导致 4060L 显卡只能跑在 85W 而不是满血的 140W。此工具通过 TUXEDO ioctl 接口与 EC 通信，实现 4 种性能模式切换。
 
-目前仅在 **七彩虹隐星 P15 23** (12650H + 4060L, Fedora 44) 上测试通过。理论同型号不同配置和 Clevo V250RND 系列通用。
+目前已在 **七彩虹隐星 P15 23** (12650H + 4060L, Fedora 44 / Arch Linux ) 上测试通过。理论同型号不同配置和 Clevo V250RND 系列通用。
 
 支持 4 种模式: 安静 (Quiet)、省电 (Power Saving)、性能 (Performance)、娱乐 (Entertainment)。
 
@@ -35,9 +35,6 @@ sudo ./install.sh /tmp/tuxedo-drivers
 ### Arch Linux 一键安装
 
 ```
-# Arch Linux 可以使用 AUR 上的 tuxedo-drivers-dkms 动态内核或自行编译 dkms 内核
-yay -S tuxedo-drivers-dkms
-
 cd /path/to/Mode
 chmod +x install-arch.sh
 ./install_arch.sh
